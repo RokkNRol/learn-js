@@ -1,5 +1,1 @@
-function test() {
-  alert ('Hello!');
-}
-
-test();
+alert(234234234);
