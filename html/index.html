@@ -8,6 +8,16 @@
    <title>Document</title>
    <link rel="stylesheet" href="" type="text/css">
    <!--   <script src="../js/example.js"></script>-->
+   <style>
+      .tree span:hover {
+         font-weight: 700;
+      }
+
+      .tree span {
+         cursor: pointer;
+      }
+
+   </style>
 </head>
 
 <body>
@@ -15,22 +25,98 @@
       <input type="button" id="button" value="Press Me">
       <input type="text" id="text" size="60" value="">
       <input type="reset" for="button" id="reset">
+
    </form>
+   <div id="img"></div>
+
+   <!--   // //////////////////////////////////-->
+
+   <ul class="tree">
+      <li>Животные
+         <ul>
+            <li>Млекопитающие
+               <ul>
+                  <li>Коровы</li>
+                  <li>Ослы</li>
+                  <li>Собаки</li>
+                  <li>Тигры</li>
+               </ul>
+            </li>
+            <li>Другие
+               <ul>
+                  <li>Змеи</li>
+                  <li>Птицы</li>
+                  <li>Ящерицы</li>
+               </ul>
+            </li>
+         </ul>
+      </li>
+      <li>Рыбы
+         <ul>
+            <li>Аквариумные
+               <ul>
+                  <li>Гуппи</li>
+                  <li>Скалярии</li>
+               </ul>
+
+            </li>
+            <li>Морские
+               <ul>
+                  <li>Морская форель</li>
+               </ul>
+            </li>
+         </ul>
+      </li>
+   </ul>
+   <!--         Start scripts  -->
+   <!-- start script button-->
    <script>
       button.onclick = function() {
          text.value += "in onclick";
-         text.focus();
+         img.add += "in onclick";
+         text.value += "!focus";
          text.value += "out onclick";
          reset.style.backgroundColor = "red";
+         img.style.width = "550px";
+         img.style.height = "100px";
+         button.style.backgroundColor = "#fff";
+         img.style.backgroundColor = "red";
+
       };
-      text.onfocus = function() {
-         text.value += "!focus";
-      };
+
       reset.onclick = function() {
          reset.style.backgroundColor = "#fff";
+         button.style.backgroundColor = "blue";
+         img.style.backgroundColor = "blue";
       }
 
    </script>
+   <!--   end script button-->
+
+   <!--  start script Ul>li-->
+   <script>
+      var treeUl = document.getElementsByTagName('ul')[0];
+      var treeLis = treeUl.getElementsByTagName('li');
+      for (var i = 0; i < treeLis.length; i++) {
+         var li = treeLis[i];
+         var span = document.createElement('span');
+         li.insertBefore(span, li.firstChild);
+         span.appendChild(span.nextSibling);
+      }
+
+      treeUl.onclick = function(event) {
+         var target = event.target;
+         if (target.tagName != 'SPAN') {
+            return;
+         }
+
+         var childrenContainer = target.parentNode.getElementsByTagName('ul')[0];
+         if (!childrenContainer) return;
+         childrenContainer.hidden = !childrenContainer.hidden;
+      }
+
+   </script>
+   <!--   end script ul>li-->
 </body>
 
 </html>
