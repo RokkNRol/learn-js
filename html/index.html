@@ -12,19 +12,23 @@
 
 <body>
    <form action="">
-      <input type="button" id="buttonn" value="Press Me">
+      <input type="button" id="button" value="Press Me">
       <input type="text" id="text" size="60" value="">
-      <input type="reset" for="button">
+      <input type="reset" for="button" id="reset">
    </form>
    <script>
-      buttonn.onclick = function() {
+      button.onclick = function() {
          text.value += "in onclick";
          text.focus();
          text.value += "out onclick";
+         reset.style.backgroundColor = "red";
       };
       text.onfocus = function() {
          text.value += "!focus";
       };
+      reset.onclick = function() {
+         reset.style.backgroundColor = "#fff";
+      }
 
    </script>
 </body>
