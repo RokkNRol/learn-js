@@ -6,33 +6,25 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
    <title>Document</title>
-   <link rel="stylesheet" href="" type="text/css>
-   <script src=""></script>
+   <link rel="stylesheet" href="" type="text/css">
+   <!--   <script src="../js/example.js"></script>-->
 </head>
 
 <body>
+   <form action="">
+      <input type="button" id="buttonn" value="Press Me">
+      <input type="text" id="text" size="60" value="">
+      <input type="reset" for="button">
+   </form>
    <script>
-      var qualificationDistance = 200;
-      var attempts = [120, 150, 160, 201, 203, 180, 202];
-      var qualified = false;
-      var averageBest = 0;
-
-      for (var i = 0; i <= attempts.length - 2; i++) {
-         for (var j = i + 1; j <= attempts.length - 1; j++) {
-            var min = attempts[i];
-            if (attempts[j] < min) {
-               min = attempts[j];
-               var swap = attempts[i];
-               attempts[i] = min;
-               attempts[j] = swap;
-
-            }
-         }
-      }
-      averageBest = (attempts[attempts.length - 1] + attempts[attempts.length - 2] + attempts[attempts.length - 3]) / 3;
-      if (averageBest > qualificationDistance) {
-         qualified = true;
-      }
+      buttonn.onclick = function() {
+         text.value += "in onclick";
+         text.focus();
+         text.value += "out onclick";
+      };
+      text.onfocus = function() {
+         text.value += "!focus";
+      };
 
    </script>
 </body>
