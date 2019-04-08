@@ -41,13 +41,29 @@ treeUl.onclick = function (event) {
    var childrenContainer = target.parentNode.getElementsByTagName('ul')[0];
    if (!childrenContainer) return;
    childrenContainer.hidden = !childrenContainer.hidden;
-}
+};
 // end
 
 let persone = {
    name: "Jone",
    age: 25,
    maried: false
-};
+}
 
 console.log(persone.name);
+console.log(persone.name);
+
+let money = +prompt("Ваш бюджет на месяц?", "");
+let time = prompt("Введите дату в формате YYYY-MM-DD", "");
+let cashVar = +prompt("Введите обязательную статью расходов в этом месяце", "");
+let hauMach = +prompt("Во сколько обойдется", "");
+
+let appData = {
+   cash: money,
+   timeData: time,
+   expenses: {
+      cashVar: hauMach
+   }
+
+}
+alert(appData.expenses.cashVar);
