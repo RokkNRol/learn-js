@@ -165,23 +165,72 @@
 //   }
 //};
 //detectDayBudget();
-let optionalExpenses = {
-
-};
-
-function chooseOptExpenses() {
-   for (var i = 1; i < 4; i++) {
-      let a = prompt("Введите статью необязательных расходов в этом месяце", "");
-
-      if ((typeof (a)) === 'string' && (typeof (a)) != null && a != '' && a.length < 50) {
-         console.log("done");
-         optionalExpenses[i] = a;
-      } else {
-         i--;
-         continue;
-      }
-   };
-};
-chooseOptExpenses();
+//let optionalExpenses = {
+//
+//};
+//
+//function chooseOptExpenses() {
+//   for (var i = 1; i < 4; i++) {
+//      let a = prompt("Введите статью необязательных расходов в этом месяце", "");
+//
+//      if ((typeof (a)) === 'string' && (typeof (a)) != null && a != '' && a.length < 50) {
+//         console.log("done");
+//         optionalExpenses[i] = a;
+//      } else {
+//         i--;
+//         continue;
+//      }
+//   };
+//};
+//chooseOptExpenses();
 // end script
-Zstar03082010Admin
+//let option = {
+//   width: 100,
+//   height: 100,
+//   name: "test"
+//}
+//console.log(option.width);
+//option.bool = false;
+//option.color = {
+//   border: "back",
+//   bg: "red"
+//};
+//console.log(option);
+//delete option.color.bg;
+//console.log(option);
+//for (let key in option) {
+//   console.log("Свойство " + key + " имеет значение " + option[key]);
+//};
+//console.log(Object.keys(option).length);
+//
+//let arr = ["first", 2, 3, "four", 5];
+//arr.forEach(function(item, i, mass) {
+//   console.log(i + ': ' + item + " = (массив: " + mass + ')');
+//});
+//let mass = [1,3,4,6,7];
+//for (let key of mass) {
+//   console.log(key + ' - значение;');
+//}
+//let ans = prompt('', ''),
+//    arr = [];
+//arr = ans.split(',');
+//console.log(arr);
+//let arr = ['hello', 'world', 'JS', 'by'],
+//    i = arr.join(', ');
+//console.log(i);
+//let arr = [1, 15, 5, 7],
+//    i = arr.sort(compare);
+//function compare(a, b) {
+//   return a-b;
+//}
+//
+//console.log(arr);
+let a = 2;
+let c = [];
+for(var i = 1; i < 33; i++) {
+   let b = Math.pow(a, i);
+   c.push(b);
+   console.log("index = " + i + " value: " + b);
+
+};
+console.log(c);
