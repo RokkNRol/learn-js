@@ -6,16 +6,14 @@ button.onclick = function () {
    text.value += "!focus";
    text.value += "out onclick";
    reset.style.backgroundColor = "red";
-   img.style.width = "550px";
-   img.style.height = "100px";
    button.style.backgroundColor = "#fff";
-   img.style.backgroundColor = "red";
+   document.body.style.backgroundColor = "#DCDCDC";
    ulli.style.fontSize = "20px";
 };
 reset.onclick = function () {
    reset.style.backgroundColor = "#fff";
    button.style.backgroundColor = "blue";
-   img.style.backgroundColor = "blue";
+   document.body.style.backgroundColor = "#fff";
    ulli.style.fontSize = "16px";
 };
 //
@@ -226,12 +224,12 @@ treeUl.onclick = function (event) {
 //}
 //
 //console.log(arr);
-let a = 2;
-let c = [];
-for(var i = 1; i < 33; i++) {
-   let b = Math.pow(a, i);
-   c.push(b);
-   console.log("index = " + i + " value: " + b);
-
-};
-console.log(c);
+//let a = 2;
+//let c = [];
+//for(var i = 1; i < 33; i++) {
+//   let b = Math.pow(a, i);
+//   c.push(b);
+//   console.log("index = " + i + " value: " + b);
+//
+//};
+//console.log(c);
