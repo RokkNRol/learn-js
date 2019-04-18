@@ -233,3 +233,20 @@ treeUl.onclick = function (event) {
 //
 //};
 //console.log(c);
+let doc = document.body.querySelector('.block');
+
+function ssd() {
+
+   if(doc.style.backgroundColor == "red") {
+   doc.style.backgroundColor = "orange";
+   doc.style.width = '400px';
+} else {
+   doc.style.backgroundColor = "red";
+   doc.style.width = '300px';
+}
+}
+btn.addEventListener("click", ssd);
+
+
+
+
