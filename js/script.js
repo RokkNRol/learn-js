@@ -236,18 +236,14 @@ treeUl.onclick = function (event) {
 
 
 function changeColor() {
-let doc = document.body.querySelector('.block');
-   if(doc.style.backgroundColor == "red") {
-   doc.style.backgroundColor = "orange";
-   doc.style.width = '400px';
-   doc.style.
-} else {
-   doc.style.backgroundColor = "red";
-   doc.style.width = '300px';
-}
+   let doc = document.body.querySelector('.block');
+   if (doc.style.backgroundColor == "red") {
+      doc.style.backgroundColor = "orange";
+      doc.style.width = '400px';
+      doc.style.
+   } else {
+      doc.style.backgroundColor = "red";
+      doc.style.width = '300px';
+   }
 }
 btn.addEventListener("click", changeColor);
-
-
-
-
