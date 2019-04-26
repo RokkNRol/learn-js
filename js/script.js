@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 button.onclick = function () {
    text.value += "in onclick";
    img.add += "in onclick";
@@ -72,7 +74,7 @@ function detectDayBudget() {
       money = +prompt("Ваш бюджет на месяц?", "");
    }
 };
-detectDayBudget();
+//detectDayBudget();
 
 let appData = {
    cash: money,
@@ -147,13 +149,13 @@ let appData = {
 
    }
 };
-appData.detectDayBudget();
+//appData.detectDayBudget();
 /*appData.chooseIncome();*/
 
-
-for (let key in appData) {
-   alert("Программа имеет свойства: " + key + " и его значение: " + appData[key]);
-}
+//
+//for (let key in appData) {
+//   alert("Программа имеет свойства: " + key + " и его значение: " + appData[key]);
+//}
 /*
 let i = 0;
 while (i < 2) {
@@ -249,3 +251,39 @@ function changeColor() {
    }
 }
 btn.addEventListener("click", changeColor);
+/*
+add parallax
+*/
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image, {
+   scale: 1.5
+});
+
+var image = document.getElementsByClassName('thumbnail2');
+new simpleParallax(image, {
+   delay: .6,
+   orientation: 'left',
+   scale: 1.8,
+   transition: 'cubic-bezier(0,0,0,1)'
+});
+
+var image = document.getElementsByClassName('thumbnail6');
+new simpleParallax(image, {
+   delay: .6,
+   scale: 2,
+   orientation: 'right',
+});
+
+var image = document.getElementsByClassName('thumbnail3');
+new simpleParallax(image, {
+   orientation: 'right',
+   scale: 1.5
+});
+
+var image = document.getElementsByClassName('thumbnail5');
+new simpleParallax(image, {
+   orientation: 'left'
+});
+/*
+end parallax
+*/
