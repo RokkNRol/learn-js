@@ -1,4 +1,4 @@
-/*'use strict';*/
+'use strict';
 
 button.onclick = function () {
    text.value += "in onclick";
@@ -148,8 +148,12 @@ let appData = {
    }
 };
 appData.detectDayBudget();
-appData.chooseIncome();
+/*appData.chooseIncome();*/
 
+
+for (let key in appData) {
+   alert("Программа имеет свойства: " + key + " и его значение: " + appData[key]);
+}
 /*
 let i = 0;
 while (i < 2) {
