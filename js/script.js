@@ -151,11 +151,10 @@ let appData = {
 };
 //appData.detectDayBudget();
 /*appData.chooseIncome();*/
-
 //
-//for (let key in appData) {
+//for (let key of appData) {
 //   alert("Программа имеет свойства: " + key + " и его значение: " + appData[key]);
-//}
+//};
 /*
 let i = 0;
 while (i < 2) {
@@ -251,6 +250,8 @@ function changeColor() {
    }
 }
 btn.addEventListener("click", changeColor);
+
+///////////////////////////////////////////////
 /*
 add parallax
 */
