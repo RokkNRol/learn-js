@@ -2,105 +2,24 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-   <title>LearnJS</title>
-   <link rel="stylesheet" href="/style.css" type="text/css">
-   <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@4.0.0/dist/simpleParallax.min.js"></script>
-   <style>
-      .tree span:hover {
-         font-weight: 700;
-      }
-
-      .tree {
-         cursor: pointer;
-      }
-
-   </style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
-   <form action="">
-      <input type="button" id="button" value="Press Me">
-      <input type="text" id="text" size="60" value="">
-      <input type="reset" for="button" id="reset">
-
-   </form>
-   <div id="img"></div>
-
-   <ul class="tree" id="ulli">
-      <li>Животные
-         <ul>
-            <li>Млекопитающие
-               <ul>
-                  <li>Коровы</li>
-                  <li>Ослы</li>
-                  <li>Собаки</li>
-                  <li>Тигры</li>
-               </ul>
-            </li>
-            <li>Другие
-               <ul>
-                  <li>Змеи</li>
-                  <li>Птицы</li>
-                  <li>Ящерицы</li>
-               </ul>
-            </li>
-         </ul>
-      </li>
-      <li>Рыбы
-         <ul>
-            <li>Аквариумные
-               <ul>
-                  <li>Гуппи</li>
-                  <li>Скалярии</li>
-               </ul>
-
-            </li>
-            <li>Морские
-               <ul>
-                  <li>Морская форель</li>
-               </ul>
-            </li>
-         </ul>
-      </li>
-   </ul>
-   <section class="diaporama">
-      <div class="diaporama__container">
-         <div class="diaporama__img-loaded">
-
-            <img class="thumbnail img1" src="/img/wallpaper1.jpg" alt="image">
-         </div>
-         <div class="diaporama__img-loaded">
-
-            <img class="thumbnail2 img1" src="/img/wallpaper2.jpg" alt="image">
-         </div>
-         <div class="diaporama__subcontainer">
-            <div class="diaporama__img desktop loaded">
-               <img class="thumbnail3 img1" src="/img/wallpaper3.jpg" alt="image">
-            </div>
-            <div class="diaporama__img desktop loaded">
-               <img class="thumbnail img1" src="/img/wallpaper4.jpg" alt="image">
-            </div>
-            <div class="diaporama__img desktop loaded">
-               <img class="thumbnail5 img1" src="/img/wallpaper5.jpg" alt="image">
-            </div>
-            <div class="diaporama__img desktop loaded">
-               <img class="thumbnail6 img1" src="/img/wallpaper6.jpg" alt="image">
-            </div>
-         </div>
-      </div>
-
-   </section>
-
-
-   <button id="btn">Click me</button>
-   <div class="block" style="width: 200px; height: 200px;  margin: 30px; ">
-
-   </div>
-
-   <script src="../js/script.js"></script>
+	<div class="wrapper">
+		<a href="" class="newList">Новый список</a>
+		<label for="input">
+			<input type="text" class="" id="input" placeholder="Список дел">
+		</label>
+		<a href="#" class="enterPress">Enter</a>
+		<a href="" class="removeList">Удалить выполненные</a>
+		<ol class="toDoList"></ol>
+	</div>
+	<script src="../js/script.js"></script>
 </body>
 
 </html>
